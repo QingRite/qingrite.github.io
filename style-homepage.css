@@ -2,8 +2,14 @@
     margin: 0;
     padding: 0;
 }
+/*fonts*/
+h1, h2, h3, h4 {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
 /*header*/
-header nav{
+header nav{ 
     background-color: black;
     background-position: center;
     background-size: cover;
@@ -34,4 +40,71 @@ a {
     list-style: none;
     text-decoration: none;
 }
+/*body*/
 
+/*about section*/
+.about-sect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(resources/about-cover.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100px 20;
+    padding: 150px 0;
+}
+.sect-heading {
+    padding: 20px 0px;
+}
+/*about-me*/
+.header-img {
+    order: 1;
+    padding: 5px;
+    margin: 5px;
+}
+img {
+    background-attachment: fixed;
+}
+.about-contents {
+    order: 2;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(229, 223, 223);
+}
+
+/*section layout*/
+.sect {
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+.sect-heading {
+    padding: 20px 20px 10px;
+}
+
+.bar {
+    background-color: white;
+    margin-left: 20px;
+    height:2px;
+    width:100px;
+}
+
+.edu {
+    list-style-type: none;
+}
+
+.edu-heading {
+    font-size: small;
+    text-align: left;
+}
+.edu-cont {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    padding-left: 10px;
+    margin: 10px;
+}
+.edu-date {
+    text-align: center;
+}
