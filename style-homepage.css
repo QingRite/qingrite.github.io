@@ -55,6 +55,7 @@ a {
     padding: 150px 0;
 }
 .sect-heading {
+    display: inline-block;
     padding: 20px 0px;
 }
 /*about-me*/
@@ -79,16 +80,18 @@ img {
     color: white;
 }
 .sect-heading {
-    padding: 20px 20px 10px;
+    margin: 20px 20px 10px;
+    font-size: 24px;
 }
 
+/*headings bar*/
 .bar {
     background-color: white;
-    margin-left: 20px;
     height:2px;
-    width:100px;
+    width:75%;
 }
 
+/*education section*/
 .edu {
     list-style-type: none;
 }
@@ -107,4 +110,149 @@ img {
 }
 .edu-date {
     text-align: center;
+}
+.edu-link {
+    display: inline-block;
+    font-family:'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: rgb(218, 64, 64);
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 19px;
+}
+/*Skills section*/
+.study-field {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    margin: 20px 20px 10px;
+}
+
+.skill-heading {
+    margin: 20px 0px;
+}
+
+.skill-cont {
+    background-color: rgb(69, 69, 69);
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.skillbar {
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    height: 7%;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.skill-prof {
+    position: absolute;
+    display: flex;
+    background-color: rgb(64, 64, 211);
+    height: 100%;
+    border-radius: 5px;
+    align-items: center;  
+}
+.prof-percent {
+    position: absolute;
+    font-size: 80%;
+    right: 5%;                                                      
+}
+.read-more-btn {
+    display: inline-block;
+    font-family:'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: rgb(218, 64, 64);
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 19px;
+}
+/*Skills proficiency*/
+#mechde {
+    width: 75%;
+}
+
+#robot {
+    width: 80%;
+}
+
+#elec {
+    width: 50%;
+}
+
+#asbly {
+    width: 60%;
+}
+
+#pm {
+    width: 80%;
+}
+
+#code {
+    width: 85%;
+}
+
+#web {
+    width: 85%;
+}
+
+#network {
+    width: 60%;
+}
+
+#plc {
+    width: 65%;
+}
+/*Employment history*/
+.employ-subsect {
+    position: relative;
+}
+
+.timelinedot {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 10px;
+    left: 25px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: rgb(39, 38, 38);
+}
+
+.timelinebar {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top:25px;
+    left: 30px;
+    background-color: white;
+}
+
+.employ-cont {
+    margin-left: 50px;
+}
+.employment-subheading {
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+.responsibilities {
+    margin-left: 70px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .study-field {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 }
