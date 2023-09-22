@@ -232,7 +232,7 @@ img {
     width: 5px;
     height: 100%;
     top:25px;
-    left: 30px;
+    left: 32px;
     background-color: white;
 }
 
@@ -247,9 +247,15 @@ img {
 .responsibilities {
     margin-left: 70px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
-
+/*contacts section*/
+.contacts {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
 @media screen and (max-width: 768px) {
     .study-field {
         grid-template-rows: 1fr 1fr;
