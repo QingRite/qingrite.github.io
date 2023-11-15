@@ -11,60 +11,99 @@
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Montserrat:wght@500&family=Open+Sans&display=swap" rel="stylesheet"
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Montserrat:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
-                <div class="header-name"><h1>Qing Rong</h1></div>
+                <h1 class="header-name">&lt;<span class="header-blue">QR</span>/&gt;</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Achievements</a></li>
-                    <li><a href="#">Experiences</a></li>
+                    <li class="nav-border"><a href="#">Home</a></li>
+                    <li class="nav-border"><a href="#">About</a></li>
+                    <li class="nav-border"><a href="#">Skills</a></li>
+                    <li class="nav-border"><a href="#">Achievements</a></li>
+                    <li class="nav-border"><a href="#">Experiences</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="about-sect">
-                <div class="header-img">
-                    <img src="resources/aboutme-image.jpg" width="240" height="320">
-                </div>
-                <div class="about-contents">    
-                    <h1 class="sect-heading about-title">Hello! Im Qing Rong, an aspiring developer</h1>
+            <section class="intro-sect"> 
+                <h1 class="intro-title">Qing Rong</h1>
+                <ul class="intro-cont">
+                    <li class="intro-elements intro-border">Aspiring developer</li>
+                    <li class="intro-elements intro-border">Automation & Robotics Engineer</li>
+                    <li class="intro-elements">Amateur photographer</li>
+                </ul>
+            </section>
+            <section class="sect about-sect">
+                <h1 class="about-title">About me</h1>
+                <div class="about-contents">
+                    <div class="header-img">
+                        <img src="resources/aboutme-image.jpg" width="240" height="320">
+                    </div>
                     <p class="about-desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                    
                     </p>
-                    <div class="link-btn">
-                        <a href="#"></a>
-                    </div>
                 </div>
             </section>
             <section class="sect edu-sect">
-                <h1 class="sect-heading">Education<div class="bar"></div></h1>
-                <ul class="edu">
-                    <li class="edu-cont">
-                        <h2 class="edu-heading">NYP Diploma in Robotics and Mechatronics</h1>
-                        <h2 class="edu-heading edu-date">2020-2023</h2>
-                    </li>
-                    <li class="edu-cont">
-                        <h2 class="edu-heading">Yio Chu Kang Secondary School</h1>
-                        <h2 class="edu-heading edu-date">2015-2019</h2>
-                    </li>
-                    <li class="edu-cont">
-                        <h2 class="edu-heading">Townsville Primary School</h1>
-                        <h2 class="edu-heading edu-date">2010-2019</h2>
-                    </li>
+                <div class="edu-exp-tabs">
+                    <button type="button" class="button1 sect-heading tab-bord" id="edu-tab" onclick="clickHandler1">Education</button>
+                    <button type="button" class="button2 sect-heading" id="exp-tab" onclick="clickHandler2">Experiences</button>
                 </div>
-                <div class="edu-link">
-                    <a href="#">View records</a>
+                <div class="tab-1 tab-cont">
+                    <div class="table-cont">
+                        <table>
+                            <tr class="edu-cont">
+                                <td><h2 class="edu-heading">NYP Diploma in Robotics and Mechatronics</h1></td>
+                                <td><h2 class="edu-heading edu-date">2020-2023</h2></td>
+                            </tr>
+                            <tr class="edu-cont">
+                                <td><h2 class="edu-heading">Yio Chu Kang Secondary School</h1></td>
+                                <td><h2 class="edu-heading edu-date">2015-2019</h2></td>
+                            </tr>
+                            <tr class="edu-cont">
+                                <td><h2 class="edu-heading">Townsville Primary School</h1></td>
+                                <td><h2 class="edu-heading edu-date">2010-2019</h2></td>
+                            </tr>
+                        </table>
+                    </div>  
+                    <div class="link">
+                        <a href="#">View records</a>
+                    </div>
                 </div>
-                <!--grids layout-->
+                <div class="tab-2 tab-cont hidden">
+                    <div class="employ-subsect">
+                        <div class="timelinedot"></div><div class="timelinebar"></div>
+                        <h2 class="employ-cont employment-heading">Mechanical Engineer(FYP)</h2>
+                        <h3 class="employ-cont employment-subheading">Nov 2022 - Feb 2023</h3>
+                        <img src="">
+                        <ul class="employ-cont responsibilities">
+                            <li>Design sachet inspection unit for Nestle products</li>
+                            <li>Development and Integration of Lead Frame Dispensing Unit & Stacker/De-Stacker Unit for the Manufacturing of Viper Products (Phase 2)</li>
+                        </ul>
+                        <div class="link">
+                            <a href="#">View report</a>
+                        </div>
+                    </div>
+                    <div class="employ-subsect">
+                        <div class="timelinedot"></div><div class="timelinebar"></div>
+                        <h2 class="employ-cont employment-heading">Research Assistant Intern at Curiox Biosystems</h2>
+                        <h3 class="employ-cont employment-subheading">Sept 2022 - Nov 2022</h3>
+                        <img src="">
+                        <ul class="employ-cont responsibilities">
+                            <li>Design & Conduct Verification & Validation tests for prototype</li>
+                            <li>Draft technical reports & documentation</li>
+                        </ul>
+                        <div class="link">
+                            <a href="#">View report</a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="sect skills-sect">
-                <h1 class="sect-heading">Professional skills<div class="bar"></div></h1>
+                <h1 class="sect-heading">Professional skills</h1>
                 <!--skills displayed vertically with bar graph showcasing level of proficiency-->
                 <!--Engineering-->
                 <ul class="study-field">
@@ -133,43 +172,20 @@
                         </div>
                     </li>
                 </ul>
-                <div class="read-more-btn"><a href="#">Read more</a></div>
-            <section class="employment-sect">
-                <h1 class="sect-heading">Employment history<div class="bar"></div></h1>
-                <!--Description of work experiences-->
-                <div class="employ-subsect">
-                    <div class="timelinedot"></div><div class="timelinebar"></div>
-                    <h2 class="employ-cont employment-heading">Mechanical Engineer(FYP)</h2>
-                    <h3 class="employ-cont employment-subheading">Nov 2022 - Feb 2023</h3>
-                    <img src="">
-                    <ul class="employ-cont responsibilities">
-                        <li>Design sachet inspection unit for Nestle products</li>
-                        <li>Development and Integration of Lead Frame Dispensing Unit & Stacker/De-Stacker Unit for the Manufacturing of Viper Products (Phase 2)</li>
-                    </ul>
-                </div>
-                <div class="employ-subsect">
-                    <div class="timelinedot"></div><div class="timelinebar"></div>
-                    <h2 class="employ-cont employment-heading">Research Assistant Intern at Curiox Biosystems</h2>
-                    <h3 class="employ-cont employment-subheading">Sept 2022 - Nov 2022</h3>
-                    <img src="">
-                    <ul class="employ-cont responsibilities">
-                        <li>Design & Conduct Verification & Validation tests for prototype</li>
-                        <li>Draft technical reports & documentation</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="contacts-sect">
-                <h1 class="sect-heading">Contact me<div class="bar"></div></h1>
+                <div class="link"><a href="#">Read more</a></div>
+            <script src="switchable-tabs.js"></script>
+        </main>
+        <footer>
+            <section class="sect contacts-sect">
+                <h1 class="sect-heading">Contacts</h1>
                 <!--Description-->
                 <div class="contacts">
                   <div class="icon"><img src="resources/linkedin-icon.png" width="100" height="100"></div>
                   <div class="contacts-ctn"><a href="#">LinkedIn</a></div>
-                  <div class="icon"><img src="resources/gmail-icon.png" width="100" height="100"></div>
-                  <div class="contacts-ctn"><a href="#">Gmail</a></div>
+                  <div class="icon"><img src="resources/github-icon.png" width="100" height="100"></div>
+                  <div class="contacts-ctn"><a href="#">Github</a></div>
                 </div>
             </section>
-        </main>
-        <footer>
         </footer>
     </body>
 </html>
