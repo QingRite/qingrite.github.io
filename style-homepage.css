@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 /*fonts*/
 h1, h2, h3, h4 {
     font-family: 'Comfortaa', cursive;
@@ -190,14 +196,11 @@ a {
     font-size: 14px;
     background-color: rgb(218, 64, 64);
     padding: 10px;
-    margin: 0px 0px 10px 50px;
     border-radius: 19px;
+    margin-bottom: 10px;
 }
 
 /*Employment history*/
-.employment-sect {
-    padding-bottom: 40px;
-}
 .employ-subsect {
     position: relative;
 }
@@ -222,6 +225,10 @@ a {
     background-color: white;
 }
 
+.endline {
+    height: 85%;
+}
+
 .employ-cont {
     margin-left: 50px;
 }
@@ -235,6 +242,10 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     padding-bottom: 0px;
+}
+
+.employ-subsect .link {
+    margin: 10px auto 10px 50px;
 }
 
 /*Skills section*/
@@ -334,9 +345,13 @@ a {
 
 /*contacts section*/
 .contacts {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin: 0px 7px;
 }
 @media screen and (max-width: 768px) {
     .study-field {
@@ -345,7 +360,5 @@ a {
     }
 }
 @media screen and (max-width: 381px) {
-    .sect, .about-sect {
-        width: 100vw;
-    }
+  
 }
