@@ -282,6 +282,7 @@ a {
     height: 7%;
     width: 80%;
     border-radius: 20px;
+
 }
 
 .skill-prof {
@@ -291,6 +292,7 @@ a {
     height: 100%;
     border-radius: 5px;
     align-items: center;  
+    transition: width 1s ease-in-out;
 }
 .prof-percent {
     position: absolute;
@@ -353,6 +355,8 @@ a {
 .icon {
     margin: 0px 7px;
 }
+
+/*responsive design*/
 @media screen and (max-width: 768px) {
     .study-field {
         grid-template-rows: 1fr 1fr;
@@ -362,3 +366,5 @@ a {
 @media screen and (max-width: 381px) {
   
 }
+
+/*Animations*/

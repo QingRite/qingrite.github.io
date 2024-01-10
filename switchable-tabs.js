@@ -18,7 +18,7 @@ function clickHandler1() {
     }
 
 }
-
+// Function for handling clicks
 function clickHandler2() {
     // check if tab 2 is hidden
     // hide tab 1 contents and display tab 2 contents
@@ -32,6 +32,77 @@ function clickHandler2() {
         //do nothing
     }
 }
+
+//function for handling animations
+// stores as array
+const skillprof = Array.from(document.getElementsByClassName("skill-prof"));
+
+//set current width to 0    
+const currentWidth = 0;
+var index = 0;
+var skillprofvalue = skillprof[index];
+var originalWidth = skillprofvalue.offsetWidth;
+var widthData = []
+//copies original width properties of each element and set each width to 0
+for (var i = 0; i < skillprof.length; i++) {
+    barWidth = skillprof[i].offsetWidth
+    widthData.push(barWidth);
+    skillprof[i].style.width = 0 + 'px';
+} 
+
+
+
+//Function that Check if element is in viewport
+function isInViewport() {
+    var elmt = skillprofvalue.getBoundingClientRect();
+    //variable that returns bottom edge of current viewport
+    var bottomY = window.scrollY + window.innerHeight;
+    return (elmt.top >= 0 && bottomY < elmt.bottom);
+}
+
+//function that returns elements to original size for animations\
+//why is this still at mechde
+function returnToOriginalSize() {
+    var skillprofvalue = skillprof[index];  
+    console.log(widthData[index]);
+    skillprofvalue.style.width = widthData[index] + 'px';
+    return (skillprofvalue.style.width);
+}
+
+//function that handles scroll animations
+//function calls itself untill end of index
+function scrollHandler() {
+    if (index <= skillprof.length) {
+        if (isInViewport(skillprofvalue) == false ) {
+            isInViewport();
+            returnToOriginalSize();
+            //move to next element
+            index++;
+        }   
+        else {
+            //stop recursive function   
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', scrollHandler);
+setInterval(scrollHandler, 100);
+
+skillprof.forEach(scrollHandler);   
+
+
+
+
+//function for handling resize
+function handleResize() {
+    var originalWidth = skillprofvalue.offsetWidth;
+    console.log(skillprofvalue.offsetWidth);
+    skillprofvalue.style.width = originalWidth + 'px';
+    console.log('resize')
+}
+
+window.addEventListener('resize', handleResize);
+
 
 
 button1.addEventListener('click', clickHandler1);
