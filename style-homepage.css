@@ -33,7 +33,7 @@ header nav{
 .header-blue {
     color: #426da9;
 }
-
+/*navigation bar*/
 nav ul{
     display: inline-block;
     margin: 10px;
@@ -55,6 +55,40 @@ a {
 .nav-border {
     border-right: 1px solid gray;
 }
+
+.dropdown-menu {
+    margin-right: 20px;
+    display: none;
+}
+
+
+.bars {
+    display: inline-block;
+    background-color: white;
+    height: 2px;
+    width: 18px;
+    top: -3px;
+    position: relative;    
+}
+
+
+/*Insert bars before and after reference bar*/
+.bars::before,.bars::after {
+    content:"";
+    display: inline-block;
+    background-color: white;
+    height: 2px;
+    width: 18px;    
+    position: absolute;  
+}
+.bars::before {
+    top:5px;
+}
+.bars::after {
+    top: -5px;
+    height: 2px;
+}
+
 /*body*/
 
 /*intro section*/
@@ -357,14 +391,32 @@ a {
 }
 
 /*responsive design*/
+/*small screens*/
+@media screen and (max-width: 331px) {
+/*hide all navbar items*/
+    .nav-items {
+        display: none;           
+    }
+}
+/*mobile devices*/
+@media screen and (max-width: 480px) {
+    /*hamburger icon appear*/
+    .dropdown-menu {
+        display: inline-block;
+    }
+    /*hide items*/
+    .nav-secondary {
+        display: none;
+    }
+}
+/*tablets */
 @media screen and (max-width: 768px) {
     .study-field {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width: 381px) {
-  
-}
+
+
 
 /*Animations*/

@@ -33,6 +33,10 @@ function clickHandler2() {
     }
 }
 
+
+button1.addEventListener('click', clickHandler1);
+button2.addEventListener('click', clickHandler2);
+
 //function for handling animations
 // stores as array
 const skillprof = Array.from(document.getElementsByClassName("skill-prof"));
@@ -52,6 +56,22 @@ for (var i = 0; i < skillprof.length; i++) {
 
 
 
+
+
+
+//function for handling resize
+function handleResize() {
+    var originalWidth = skillprofvalue.offsetWidth;
+    console.log(skillprofvalue.offsetWidth);
+    skillprofvalue.style.width = originalWidth + 'px';
+    console.log('resize')
+}
+
+window.addEventListener('resize', handleResize);
+
+
+
+
 //Function that Check if element is in viewport
 function isInViewport() {
     var elmt = skillprofvalue.getBoundingClientRect();
@@ -61,7 +81,6 @@ function isInViewport() {
 }
 
 //function that returns elements to original size for animations\
-//why is this still at mechde
 function returnToOriginalSize() {
     var skillprofvalue = skillprof[index];  
     console.log(widthData[index]);
@@ -70,7 +89,7 @@ function returnToOriginalSize() {
 }
 
 //function that handles scroll animations
-//function calls itself untill end of index
+//function calls itself until end of index
 function scrollHandler() {
     if (index <= skillprof.length) {
         if (isInViewport(skillprofvalue) == false ) {
@@ -89,21 +108,3 @@ document.addEventListener('DOMContentLoaded', scrollHandler);
 setInterval(scrollHandler, 100);
 
 skillprof.forEach(scrollHandler);   
-
-
-
-
-//function for handling resize
-function handleResize() {
-    var originalWidth = skillprofvalue.offsetWidth;
-    console.log(skillprofvalue.offsetWidth);
-    skillprofvalue.style.width = originalWidth + 'px';
-    console.log('resize')
-}
-
-window.addEventListener('resize', handleResize);
-
-
-
-button1.addEventListener('click', clickHandler1);
-button2.addEventListener('click', clickHandler2);
