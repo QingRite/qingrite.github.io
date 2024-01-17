@@ -1,7 +1,7 @@
 //function for handling animations
-// stores as array
+// stores as skill proficiency bar elements as array
 export const skillprof = Array.from(document.getElementsByClassName("skill-prof"));
-
+export const proftext = Array.from(document.getElementsByClassName("prof-percent"))
 //set current width to 0    
 export const currentWidth = 0;
 export var index = 0;
@@ -33,6 +33,11 @@ export function returnToOriginalSize() {
     return (skillprofvalue.style.width);
 }
 
+//function that fades in proficiency percentage text after returning width to original size
+export function fadeText() {
+    proftext[index].style.opacity = '1.0';
+}
+
 //function that handles scroll animations
 //function calls itself until end of index
 export function scrollHandler() {
@@ -40,6 +45,7 @@ export function scrollHandler() {
         if (isInViewport(skillprofvalue) == false ) {
             isInViewport();
             returnToOriginalSize();
+            fadeText();
             //move to next element
             index++;
         }   

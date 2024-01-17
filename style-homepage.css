@@ -331,7 +331,8 @@ a {
 .prof-percent {
     position: absolute;
     font-size: 80%;
-    right: 5%;                                                      
+    right: 5%;
+    transition: opacity 1s ease-in-out;                                                      
 }
 .read-more-btn {
     display: inline-block;
