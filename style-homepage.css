@@ -39,19 +39,18 @@ nav ul{
 
 nav li{
     display: inline-block;
-    padding-right: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: -3px;
 }
 
 a {
     color: white;
     list-style: none;
     text-decoration: none;
+    padding: 0px 10px;
 }
 
 .nav-border {
-    border-right: 1px solid gray;
+    border-right: 2px solid gray;
 }
 
 .dropdown-menu {
@@ -86,6 +85,12 @@ a {
     top: -5px;
     height: 2px;
 }
+
+/*Navbar animations*/
+.nav-items:hover {
+    background-color: rgb(49, 49, 49);
+}
+
 
 /*body*/
 
@@ -195,6 +200,10 @@ a {
     padding: 0px 10px;
 }
 
+.button2 {
+    margin-left: -4.8px;
+}
+
 .tab-bord {
     border-right: 1px solid rgb(193, 193, 193);
 }
@@ -230,6 +239,11 @@ a {
     padding: 10px;
     border-radius: 19px;
     margin-bottom: 10px;
+}
+
+/*link button animations*/
+.link:hover {
+    background-color: rgb(217, 101, 101);
 }
 
 /*Employment history*/
@@ -277,6 +291,14 @@ a {
 
 .employ-subsect .link {
     margin: 10px auto 10px 50px;
+}
+/*tabs animation*/
+.button1:hover {
+    border-top: 1px solid rgb(193, 193, 193);
+}
+
+.button2:hover {
+    border-bottom: 1px solid rgb(193, 193, 193);
 }
 
 /*Projects section*/
@@ -352,7 +374,7 @@ a {
     position: relative;
     background-color: rgb(64, 64, 211);
     height: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     align-items: center;  
     text-align: right;
     transition: width 1s ease-in-out;
@@ -541,4 +563,3 @@ a {
 
 
 
-/*Animations*/
