@@ -10,8 +10,6 @@ html, body{
 }
 /*fonts*/
 h1, h2, h3, h4 {
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 /*header*/
@@ -280,6 +278,108 @@ a {
 
 .employ-subsect .link {
     margin: 10px auto 10px 50px;
+}
+
+/*Projects section*/
+.project-sect {
+    padding: 10px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 20px 10px;
+}
+
+.project-cont {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.proj-heading {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.proj-img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.status {
+    display: block;
+    background-color: rgb(224, 224, 224);
+    height: 2.5%;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.statusbar {
+    display: flex;
+    position: relative;
+    background-color: rgb(64, 64, 211);
+    height: 100%;
+    border-radius: 5px;
+    align-items: center;  
+    text-align: right;
+    transition: width 1s ease-in-out;
+}
+
+.statusheading {   
+    text-align: left;
+    margin-left: 5%;
+}
+
+.statustext {
+    display: block;
+    position: absolute;
+    font-size: 70%;
+    right: 5%;
+    transition: opacity 1s ease-in-out;  
+}
+
+#portfolio {
+    width: 60%;
+}
+
+#sachet {
+    width: 100%; 
+}
+
+#ARCDRS {
+    width: 100%;
+}
+
+#AGRW {
+    width: 100%;
+}
+
+#portfolio-img {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(resources/portfolio-img.jpg);
+}
+
+#sachet-img {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(resources/FYP.jpg);
+}
+
+#ARCDRS-img {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(resources/ARCDRS.jpg);
+}
+
+#AGRW-img {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(resources/AGRW.jpg);
 }
 
 /*Skills section*/
