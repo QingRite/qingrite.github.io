@@ -273,7 +273,6 @@ a {
     margin-left: 70px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    padding-bottom: 0px;
 }
 
 .employ-subsect .link {
@@ -314,7 +313,29 @@ a {
     display: block;
     width: 90%;
     margin: 0 auto;
+}
 
+.proj-skills {
+    display: flex;
+    justify-content: center;
+    margin: 10px 5%;
+    font-size: 17px;
+}
+
+.proj-skills-heading {
+    display: inline-block;
+}
+
+.proj-skills-list {
+    list-style: none;
+}
+
+.proj-skill {
+    display: inline-block;
+    border: 2px solid red;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 20px;
 }
 
 .status {
