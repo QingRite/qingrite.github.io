@@ -15,7 +15,7 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="nav">
                 <h1 class="header-name">&lt;<span class="header-blue">QR</span>/&gt;</h1>
                 <ul>
                     <li class="nav-items nav-border" id="nav-home"><a href="#">Home</a></li>
@@ -24,9 +24,10 @@
                     <li class="nav-items nav-border nav-secondary" id="nav-skills"><a href="#">Skills</a></li>
                     <li class="nav-items nav-border nav-secondary" id="nav-achieve"><a href="#">Achievements</a></li>
                     <li class="nav-items nav-secondary" id="nav-contacts"><a href="#">Contacts</a></li>
-                    <li class="dropdown-menu "><a id="toggle-btn" class="nav-link" href="#"><span class="bars"></span></a></li>
+                    <li class="hamburger"><a id="toggle-btn" class="nav-link" href="#"><span class="bars"></span></a></li>
                 </ul>
             </nav>
+
         </header>
         <main>
             <section class="intro-sect"> 
@@ -36,6 +37,13 @@
                     <li class="intro-elements intro-border">Automation & Robotics Engineer</li>
                     <li class="intro-elements">Amateur photographer</li>
                 </ul>
+                <div class="dropdownmenu">
+                    <button type="button" onclick="" class="dropdown-item"><h2 class="dropdown-text">About</h2></button>
+                    <button type="button" onclick="" class="dropdown-item"><h2 class="dropdown-text">Background</h2></button>
+                    <button type="button" onclick="" class="dropdown-item"><h2 class="dropdown-text">Skills</h2></button>
+                    <button type="button" onclick="" class="dropdown-item"><h2 class="dropdown-text">Achievements</h2></button>
+                    <button type="button" onclick="" class="dropdown-item"><h2 class="dropdown-text">Contacts</h2></button>
+                </div>
             </section>
             <section class="sect about-sect">
                 <h1 class="about-title">About me</h1>

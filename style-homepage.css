@@ -53,7 +53,7 @@ a {
     border-right: 2px solid gray;
 }
 
-.dropdown-menu {
+.hamburger {
     margin-right: 20px;
     display: none;
 }
@@ -91,11 +91,32 @@ a {
     background-color: rgb(49, 49, 49);
 }
 
+/*Dropdown menu*/
+.dropdownmenu {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+
+.dropdown-item {
+    opacity: 0;
+    background-color: rgb(39, 38, 38);
+    width: 100vw;
+    height: 20%;
+    border-style:none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-text {
+    color: white;
+}
 
 /*body*/
 
 /*intro section*/
 .intro-sect { 
+    position: relative;
     align-items: center;
     background-image: url(resources/about-cover.jpeg);
     background-size: cover;
@@ -562,13 +583,13 @@ a {
 /*mobile devices*/
 @media screen and (max-width: 480px) {
     /*hamburger icon appear*/
-    .dropdown-menu {
+    .hamburger {
         display: inline-block;
     }
     /*hide items*/
     .nav-secondary {
         display: none;
-    }
+    }   
 }
 /*tablets */
 @media screen and (max-width: 768px) {

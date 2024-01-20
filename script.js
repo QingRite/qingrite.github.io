@@ -1,6 +1,7 @@
 import * as skillscrollanimations from './skill-scrollanimations.js';
-import * as projectscrollanimations from './project-scrollanimations.js'
+import * as projectscrollanimations from './project-scrollanimations.js';
 import * as switchabletabs from './switchable-tabs.js';
+import * as dropdownmenu from './dropdownmenu.js';
 
 
 
@@ -43,4 +44,6 @@ setInterval(projectscrollanimations.scrollHandler, 100);
 setInterval(skillscrollanimations.scrollHandler, 100);
 
 skillscrollanimations.skillprof.forEach(skillscrollanimations.scrollHandler);
-projectscrollanimations.skillprof.forEach(projectscrollanimations.scrollHandler);   
+projectscrollanimations.statusbar.forEach(projectscrollanimations.scrollHandler);   
+
+dropdownmenu.hamburger.addEventListener('click', dropdownmenu.dropDownMenuHandler);
