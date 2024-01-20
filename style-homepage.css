@@ -154,7 +154,7 @@ a {
 .about-contents {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 10px 5px 75px;
     margin: auto 15%;
 }
 .about-sect {
@@ -332,7 +332,7 @@ a {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
-    margin: 0px 20px 10px;
+    margin: 0px 10% 10px;
 }
 
 .project-cont {
@@ -349,8 +349,17 @@ a {
 
 .proj-heading {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 800;
     margin: 5px 0px;
+}
+
+.proj-text {
+    font-size: 14px;
+}
+
+.proj-desc {
+    font-weight: 200;
+    margin: 30px auto;
 }
 
 .proj-img {
@@ -590,6 +599,23 @@ a {
     .nav-secondary {
         display: none;
     }   
+    /*bring down about desc to a new line*/
+    .about-contents {
+        display: block;
+    }
+
+    /*reformat margin & font size for project section*/
+    .project-list {
+        margin: 0px 20px 10px;
+    }
+
+    .proj-skills {
+        font-size: 10px;
+    }
+
+    .proj-text {
+        font-size: 10px;
+    }
 }
 /*tablets */
 @media screen and (max-width: 768px) {
