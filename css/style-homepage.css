@@ -32,10 +32,13 @@ header nav{
     color: #426da9;
 }
 /*navigation bar*/
+nav {
+    height: 7.5vh;
+}
+
 nav ul{
     display: inline-block;
     margin: 10px;
-    height: 1.25vh;
 }
 
 nav li{
@@ -104,7 +107,7 @@ a {
     opacity: 0;
     background-color: rgb(39, 38, 38);
     width: 100vw;
-    height: 19.75vh;
+    height: 18.5vh;
     border-style:none;
     transition: opacity 0.3s ease-in-out;
 }
@@ -123,7 +126,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 285px 0;
+    padding: 50vh 0;
 }
 .intro-title {
     font-size: 50px;
