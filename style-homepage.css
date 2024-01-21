@@ -35,6 +35,7 @@ header nav{
 nav ul{
     display: inline-block;
     margin: 10px;
+    height: 1.25vh;
 }
 
 nav li{
@@ -103,7 +104,7 @@ a {
     opacity: 0;
     background-color: rgb(39, 38, 38);
     width: 100vw;
-    height: 20%;
+    height: 19.75vh;
     border-style:none;
     transition: opacity 0.3s ease-in-out;
 }
@@ -351,6 +352,11 @@ a {
     font-size: 20px;
     font-weight: 800;
     margin: 5px 0px;
+}
+
+.proj-subheading {
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .proj-text {

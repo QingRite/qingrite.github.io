@@ -23,6 +23,9 @@ export function hideMenu() {
         item.style.opacity = '0';
     });
     document.body.style.overflow = 'auto';
+    document.body.style.overflowX = 'hidden';
+    document.documentElement.style.overflowX = 'hidden';
+
 //    elementsexceptone.style.visibility = 'visible';
 }
 
