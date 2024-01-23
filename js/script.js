@@ -2,6 +2,7 @@ import * as skillscrollanimations from './skill-scrollanimations.js';
 import * as projectscrollanimations from './project-scrollanimations.js';
 import * as switchabletabs from './switchable-tabs.js';
 import * as dropdownmenu from './dropdownmenu.js';
+import * as ddmClickHandler from './ddm-clickhandler.js';
 
 
 
@@ -47,3 +48,6 @@ skillscrollanimations.skillprof.forEach(skillscrollanimations.scrollHandler);
 projectscrollanimations.statusbar.forEach(projectscrollanimations.scrollHandler);   
 
 dropdownmenu.hamburger.addEventListener('click', dropdownmenu.dropDownMenuHandler);
+ddmClickHandler.dropdownitems.forEach(function (item) {
+    item.addEventListener('click', ddmClickHandler.ddmClickHandler);
+});

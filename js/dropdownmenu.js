@@ -15,7 +15,6 @@ export function showMenu() {
         item.style.opacity = '1';
     });
     document.body.style.overflow = 'hidden';
-//    elementsexceptone.style.visibility = 'hidden';
 }
 
 export function hideMenu() {
@@ -40,4 +39,8 @@ export function dropDownMenuHandler() {
         showMenu();
     }
     console.log(index);
+}
+
+export function updateIndex(newindex) {
+    index = newindex;
 }
