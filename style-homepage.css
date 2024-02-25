@@ -112,7 +112,7 @@ a {
     opacity: 0;
     background-color: rgb(39, 38, 38);
     width: 100vw;
-    height: 18.5vh;
+    height: 17.5vh;
     border-style:none;
     transition: opacity 0.3s ease-in-out;
 }
@@ -483,7 +483,8 @@ a {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
-    margin: 0px 20px 10px;
+    margin: 0px 20px 0px;
+    padding: 15px;
 }
 
 .skill-heading {
@@ -569,6 +570,14 @@ a {
 
 #plc {
     width: 65%;
+}
+
+#androiddev {
+    width: 30%;
+}
+
+#SQL {
+    width: 60%;
 }
 
 /*contacts section*/
